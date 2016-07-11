@@ -16,6 +16,14 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
 	<link rel="stylesheet" type="text/css" href="css/modificar.css">
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$("input #inputCedula .form-control").on('keyup', 'input', function() {
+			 newval = $(this).val().replace(/[^0-9.]/g, "");
+			$(this).val(newval);
+			});
+		});
+	</script>
 
 	<!--<style type="text/css">
 
@@ -83,7 +91,7 @@
 	
 	<header class="top">
 		<row >
-			<h2>            Laboratorio Salud Primero S.A.</h2>
+			<h2><a href="index.html">            Laboratorio Salud Primero S.A.</a></h2>
 		</row>
 
 	</header>
@@ -91,10 +99,17 @@
 	
 
 		<div class="row">
-
 		
 			<div class="col-md-12">
-			<h3>Registro de Paciente</h3>
+			<div class="input-group">
+			<input type="text" class="form-control" id="inputCedula" placeholder="Cedula">
+                                    <span class="input-group-btn">
+                                        <a class="btn btn-success" type="submit">Go</a>
+                                    </span>
+			</div>
+			</div>
+			<div class="col-md-12">
+			<h3>Modificar Paciente</h3>
 			</div>
 			<div class= "forma">
 			<div class="col-md-12">
@@ -151,9 +166,20 @@
                                 </div>
 								<div class="col-md-10">
 								<div class="checkbox">
-									<!--<label><input type="checkbox" value="">Option 1</label>-->
+									<label><input type="checkbox" value="">Examen de Sangre</label>
 								</div>
-									
+								<div class="checkbox">
+									<label><input type="checkbox" value="">Examen de Orina</label>
+								</div>
+								<div class="checkbox">
+									<label><input type="checkbox" value="">Examen de Heces</label>
+								</div>
+								<div class="checkbox">
+									<label><input type="checkbox" value="">Rayos-X</label>
+								</div>
+								<div class="checkbox">
+									<label><input type="checkbox" value="">Electromiograma</label>
+								</div>
 					</div>
 					</div>
 				
