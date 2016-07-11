@@ -1,22 +1,27 @@
 $(document).ready(function(){
     $("li a").click(function(){
-        var x = $(this).text() + '     <span class="caret"></span>';
+        var x = $(this).text() + '<span class="caret pull-right"></span>';
         $("#dropdownMenu1").html(x);
+        console.log($("#dropdownMenu1").text());
     });
 
     $("#submit").click(function(){
     	var y = $("#dropdownMenu1").text();
+    	console.log($("#dropdownMenu1").text());
     	if (y=="Paciente") 
     	{
-		    window.location.href = "Paciente/centrosmedicos.html";
-		}
+		    window.location.href = "centrosmedicos.html";
+		    console.log("1");
+		};
 		if (y=="Operario") 
     	{
-		    window.location.href = "Laboratorista/marcar.html";
-		} 
+		    window.location.href = "marcar.html";
+		    console.log("1");
+		} ;
 		if (y=="Laboratorista") 
     	{
-		    window.location.href = "Operario/registrar.html";
-		}  
+		    window.location.href = "registrar.html";
+		    console.log("1");
+		};
     });
 });

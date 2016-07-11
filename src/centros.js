@@ -1,3 +1,39 @@
+$(document).ready(function(){
+
+
+
+function cargarDatos(){
+	var xhttp= new XMLHttpRequest();
+	xhttp.onreadystatechange= function(){
+	if(xhttp.readyState==4 && xhttp.status==200){
+		var json= JSON.parse(xhttp.responseText);
+		var lista= document.getElementById("lista1");
+		json.forEach(function(centros){
+		var li= document.createElement("li");
+		var a= document.createElement ("a");
+		a.textContent= centros.Nombre;
+
+		li.appendChild(a);
+		console.log(centros);
+		lista.appendChild(li);
+		});
+		
+	}
+	};
+	xhttp.open("GET", "datos/centros.json", true);
+	xhttp.send();
+	}
+
+
+
+	
+
+});
+
+
+var c = 
+{
+	"Centros_Medico":
 	[
 		{
 			"id_centro":	"1",
@@ -162,3 +198,4 @@
 		},
 
 	]
+};
