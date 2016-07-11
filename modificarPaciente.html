@@ -17,7 +17,13 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
 	<link rel="stylesheet" type="text/css" href="css/modificar.css">
-	
+		<script type="text/javascript">
+		$(document).ready(function() {
+			$("#inputCedula").keyup(function() {
+			$("#inputCedula").val(this.value.match(/[0-9]*/));
+			});
+		});
+		</script>
 
 	<!--<style type="text/css">
 
@@ -86,6 +92,7 @@
 	<header class="top">
 		<row >
 			<h2><a href="index.html">            Laboratorio Salud Primero S.A.</a></h2>
+			<h2><a href="registrar.html" id= "regis">            Registrar Paciente</a></h2>
 		</row>
 
 	</header>
