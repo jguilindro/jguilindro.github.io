@@ -1,0 +1,127 @@
+{
+"personas" : 
+	[
+		{
+			"Nombres": 		"Jorge Luis",
+			"Apellidos": 	"Cedeño Arteaga",
+			"Cédula": 		"1312436114",
+			"Correo": 		"jlcedeno@espol.edu.ec",
+			"Direccion":	"Urb. San Felipe",
+			"Telefonos":	[
+								{"telef": 	"0984563452"}
+							],
+			"Foto":  		"images/jorge.jpeg",
+			"password":		"jlcajlca",
+			"tipos_Usuario":	[
+									{"tipo":	"paciente"},
+									{"tipo":	"operario"},
+									{"tipo":	"laboratorista"}
+							  	],
+			"Mis_examenes":	[
+								{
+									"Fecha": 	"03/04/2015",
+									"tipo": 	"sangre",
+									"Estado": 	"1",
+									"link":		"",
+									"Centro":	"1"
+								},
+								{
+									"Fecha": 	"03/06/2015",
+									"tipo": 	"orina",
+									"Estado": 	"3",
+									"link":		"examenes/exam-1.pdf",
+									"Centro":	"3"
+								},
+								{
+									"Fecha": 	"05/07/2015",
+									"tipo": 	"heces",
+									"Estado": 	"2",
+									"link":		"",
+									"Centro":	"2"
+								}
+							]		
+		},
+		{
+			"Nombres": 		"Julio Cesar",
+			"Apellidos": 	"Guilindro",
+			"Cédula": 		"1234567890",
+			"Correo": 		"jlcedeno@espol.edu.ec",
+			"Direccion":	"Urdesa",
+			"Telefonos":	[
+								{"telef": 	"0989874561"}
+							],
+			"Foto":  		"images/julio.jpeg",
+			"password":		"julio123",
+			"tipos_Usuario":	[
+									{"tipo":	"paciente"},
+									{"tipo":	"operario"},
+									{"tipo":	"laboratorista"}
+							  	],
+			"Mis_examenes":	[
+								{
+									"Fecha": 	"03/04/2015",
+									"tipo": 	"sangre",
+									"Estado": 	"1",
+									"link":		"",
+									"Centro":	"1"
+								},
+								{
+									"Fecha": 	"03/06/2015",
+									"tipo": 	"orina",
+									"Estado": 	"3",
+									"link":		"examenes/exam-1.pdf",
+									"Centro":	"3"
+								},
+								{
+									"Fecha": 	"05/07/2015",
+									"tipo": 	"heces",
+									"Estado": 	"2",
+									"link":		"",
+									"Centro":	"2"
+								}
+							]		
+		},  
+		{
+			"Nombres": 		"Ana Maria",
+			"Apellidos": 	"sanchez",
+			"Cédula": 		"1234567850",
+			"Correo": 		"ana@espol.edu.ec",
+			"Direccion":	"ceibos",
+			"Telefonos":	[
+								{"telef": 	"0989874561"}
+							],
+			"Foto":  		"images/ana.jpeg",
+			"password":		"12341234",
+			"tipos_Usuario":	[
+									{"tipo":	"paciente"},
+									{"tipo":	"operario"},
+									{"tipo":	"laboratorista"}
+							  	],
+			"Mis_examenes":	[
+								{
+									"Fecha": 	"03/04/2015",
+									"tipo": 	"sangre",
+									"Estado": 	"1",
+									"link":		"",
+									"Centro":	"1"
+								},
+								{
+									"Fecha": 	"03/06/2015",
+									"tipo": 	"orina",
+									"Estado": 	"3",
+									"link":		"examenes/exam-1.pdf",
+									"Centro":	"3"
+								},
+								{
+									"Fecha": 	"05/07/2015",
+									"tipo": 	"heces",
+									"Estado": 	"2",
+									"link":		"",
+									"Centro":	"2"
+								}
+							]		
+		}=
+	]
+
+}
+
