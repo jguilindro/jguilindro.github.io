@@ -146,12 +146,12 @@
 				<form class="navbar-form navbar-left " role="search">
   					<div class="form-group " >
   						<h4>Usuario</h4>
-    					<input type="text" class="form-control" placeholder="username">
+    					<input type="text" class="form-control" placeholder="username" id="name">
     					<br>
     					<br>
  
     					<h4>Contraseña</h4>
-    					<input type="text" class="form-control" placeholder="password">
+    					<input type="text" class="form-control" placeholder="password" id = "pass">
     					<br>
     					<br>
 
@@ -164,14 +164,20 @@
 						    	<li><a href="#">Laboratorista</a></li>
 						  	</ul>
 						</div>
+
+
 	
     					
   					</div>
+
 
   					
 
 
 				</form>	
+
+				<p id="error" hidden="true">Usuario, Contraseña o tipo de usuario incorrecto</p>
+
 
 				<button type="Submit" class="btn btn-default pull-right" id="submit">Ingresar</button>
 

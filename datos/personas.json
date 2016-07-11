@@ -1,5 +1,3 @@
-{
-"personas" : 
 	[
 		{
 			"Nombres": 		"Jorge Luis",
@@ -120,8 +118,6 @@
 									"Centro":	"2"
 								}
 							]		
-		}=
+		}
 	]
-
-}
 
