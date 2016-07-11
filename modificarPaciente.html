@@ -18,10 +18,8 @@
 	<link rel="stylesheet" type="text/css" href="css/modificar.css">
 	<script type="text/javascript">
 		$(document).ready(function() {
-			$("input #inputCedula .form-control").on('keyup', 'input', function() {
-			 newval = $(this).val().replace(/[^0-9.]/g, "");
-			$(this).val(newval);
-			});
+			$("input#inputCedula.form-control").keyup(function() {
+			$("input#inputCedula.form-control").val(this.value.match(/[0-9]*/));
 		});
 	</script>
 
