@@ -4,6 +4,7 @@
 	<title>Salud Primero S.A.</title>
 	<meta charset="UTF-8">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+	<script src="src/modificar.js"></script>
 	<link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
 
 	<!-- Latest compiled and minified CSS -->
@@ -16,12 +17,7 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
 	<link rel="stylesheet" type="text/css" href="css/modificar.css">
-	<script type="text/javascript">
-		$(document).ready(function() {
-			$("input#inputCedula.form-control").keyup(function() {
-			$("input#inputCedula.form-control").val(this.value.match(/[0-9]*/));
-		});
-	</script>
+	
 
 	<!--<style type="text/css">
 
@@ -153,7 +149,7 @@
 					<div class="dropdown">
 										<button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">Seleccione uno
 										<span class="caret"></span></button>
-										<ul class="dropdown-menu">
+										<ul class="dropdown-menu" id="dropboton">
 										</ul>
 					</div>
 					</div>
