@@ -1,37 +1,34 @@
 $(document).ready(function(){
 
+	$("#dropdownMenu1").html(centros[0].Nombre+ '<span class="caret pull-right"></span>');
 
 
-	var xhttp= new XMLHttpRequest();
-	xhttp.onreadystatechange= function(){
-	if(xhttp.readyState==4 && xhttp.status==200){
-		var json= JSON.parse(xhttp.responseText);
-		var lista= document.getElementById("lista1");
-		json.forEach(function(centros){
+
+
+
+	var lista= document.getElementById("lista1");
+
+	for (var i = centros.length - 1; i >= 0; i--) {
+		
 		var li= document.createElement("li");
 		var a= document.createElement ("a");
-		a.textContent= centros.Nombre;
-
+		a.textContent= centros[i].Nombre;
 		li.appendChild(a);
 		console.log(centros);
 		lista.appendChild(li);
-		});
-		
-	}
 	};
-	xhttp.open("GET", "datos/centros.json", true);
-	xhttp.send();
 
 
+	$("li a").click(function(){
+    var x = $(this).text() + '<span class="caret pull-right"></span>';
+    $("#dropdownMenu1").html(x);
+	});
 
-	
 
 });
 
 
-var c = 
-{
-	"Centros_Medico":
+var centros = 
 	[
 		{
 			"id_centro":	"1",
@@ -71,9 +68,7 @@ var c =
 			
 								},
 							]
-
 		},
-
 		{
 			"id_centro":	"2",
 			"Nombre": 		"AlfaCentro",
@@ -112,7 +107,6 @@ var c =
 			
 								},
 							]
-
 		},
 		{
 			"id_centro":	"3",
@@ -152,7 +146,6 @@ var c =
 			
 								},
 							]
-
 		},
 		{
 			"id_centro":	"4",
@@ -192,8 +185,5 @@ var c =
 			
 								},
 							]
-
 		},
-
-	]
-};
+	];
